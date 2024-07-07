@@ -1,7 +1,7 @@
 core
 *.lst
 *.opp
-
+build/*
 asyncsrv
 durapub
 durapub2
