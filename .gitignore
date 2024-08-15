@@ -19,8 +19,8 @@ upload.sh
 changes.txt
 *.swp
 testdata*
-
 site/resources/*
 site/public/*
+build/*
 
 .venv # python venv

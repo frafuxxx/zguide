@@ -15,10 +15,16 @@
             "binaryDir": "${sourceDir}/build/${presetName}"
         },
         {
-            "name": "default",
-            "displayName": "default",
+            "name": "gcc",
+            "displayName": "gcc",
             "inherits":"base",
             "toolchainFile": "${sourceDir}/TC_gcc.cmake"
+        },
+        {
+            "name": "clang",
+            "displayName": "clang",
+            "inherits":"base",
+            "toolchainFile": "${sourceDir}/TC_clang.cmake"
         }
     ]
 }
