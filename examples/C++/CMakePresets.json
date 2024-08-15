@@ -1,16 +1,24 @@
 {
     "version": 8,
+    "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 28,
+    "patch": 0
+    },
     "configurePresets": [
         {
-            "name": "fuxxx_cmake",
-            "displayName": "Fuxxx CMake Config",
+            "name": "base",
+            "displayName": "base",
+            "hidden": true,
             "description": "Sets Ninja generator, build and install directory",
             "generator": "Ninja",
-            "binaryDir": "${sourceDir}/build/${presetName}",
-            "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Debug",
-                "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/install/${presetName}"
-            }
+            "binaryDir": "${sourceDir}/build/${presetName}"
+        },
+        {
+            "name": "default",
+            "displayName": "default",
+            "inherits":"base",
+            "toolchainFile": "${sourceDir}/TC_gcc.cmake"
         }
     ]
 }
