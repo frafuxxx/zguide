@@ -1,9 +1,9 @@
 {
     "version": 8,
     "cmakeMinimumRequired": {
-    "major": 3,
-    "minor": 28,
-    "patch": 0
+        "major": 3,
+        "minor": 28,
+        "patch": 0
     },
     "configurePresets": [
         {
@@ -17,14 +17,30 @@
         {
             "name": "gcc",
             "displayName": "gcc",
-            "inherits":"base",
+            "inherits": "base",
             "toolchainFile": "${sourceDir}/TC_gcc.cmake"
         },
         {
             "name": "clang",
             "displayName": "clang",
-            "inherits":"base",
+            "inherits": "base",
             "toolchainFile": "${sourceDir}/TC_clang.cmake"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "gcc",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "gcc",
+            "targets": ["hwclient", "hwserver", "mdbroker"]
+        },
+        {
+            "name": "clang",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "clang",
+            "targets": ["hwclient", "hwserver", "mdbroker"]
         }
     ]
 }
