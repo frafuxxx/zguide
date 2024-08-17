@@ -3,5 +3,10 @@
     "name": "official",
     "description": "official compiler for customer",
     "toolchainFile": "${workspaceFolder}/settings/TC_clang.cmake"
+  },
+  {
+    "name": "arm32",
+    "description": "arm-none-linux",
+    "toolchainFile": "${workspaceFolder}/settings/TC_arm.cmake"
   }
 ]
