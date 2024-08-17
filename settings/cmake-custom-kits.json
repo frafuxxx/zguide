@@ -1,0 +1,7 @@
+[
+  {
+    "name": "official",
+    "description": "official compiler for customer",
+    "toolchainFile": "${workspaceFolder}/settings/TC_clang.cmake"
+  }
+]

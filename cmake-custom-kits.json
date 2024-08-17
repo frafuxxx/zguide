@@ -1,6 +1,0 @@
-[
-  {
-    "name": "official",
-    "toolchainFile": "TC_clang.cmake"
-  }
-]
