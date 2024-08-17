@@ -6,7 +6,7 @@
 
 `cd build`
 
-`cmake --preset gcc .. #alternativ cmake --preset clang ..`
+`cmake ..`
 
 `cd gcc`
 

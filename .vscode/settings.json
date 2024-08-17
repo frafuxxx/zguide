@@ -1,0 +1,9 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/build/",
+    "cmake.additionalKits": [
+        "${workspaceFolder}/cmake-custom-kits.json"
+    ],
+    "cmake.preferredGenerators": [
+     "Ninja"
+    ]
+}
