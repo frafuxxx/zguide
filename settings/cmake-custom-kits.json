@@ -7,6 +7,6 @@
   {
     "name": "arm32",
     "description": "arm-none-linux",
-    "toolchainFile": "${workspaceFolder}/settings/TC_arm.cmake"
+    "toolchainFile": "${workspaceFolder}/settings/TC_arm32.cmake"
   }
 ]
